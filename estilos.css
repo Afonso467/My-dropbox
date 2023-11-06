@@ -32,7 +32,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: -9px auto;
     padding: 0 20px;
 }
 
@@ -92,14 +92,22 @@ a {
 }
 
 .gray-background {
-    background: linear-gradient(to right, #2B2929 30%, #000 20%); /* Gradiente de cinza para preto */
+    background: linear-gradient(to right, #2B2929 30%, #1E1819 20%); /* Gradiente de cinza para preto */
     display: flex;
     justify-content: flex-start; /* Alinhar o conteúdo à esquerda */
     align-items: center;
     text-align: left; /* Alinhar o texto à esquerda */
     padding: 223px 0; /* Ajuste o padding conforme necessário */
     color: #fff; /* Cor do texto branco */
+    
 }
+video { 
+    max-width: 1092px;
+    max-height: 100%;
+    width: 1200px;
+    margin-left: 715px;
+    margin-top: -958px;
+  }
 
 .black-background {
     background-color: #000;
@@ -112,11 +120,13 @@ h1 {
     margin-top: -178px;
     margin-left: 53px;
     font-size: 50px;
+    letter-spacing: 5px;
 }
-p{
+p.texto{
     margin-top: 4px;
     margin-left: 53px;
     font-size: 20px;
+    line-height: 30px;
 }
 .bitton{
     font-size: 20px;
@@ -124,18 +134,23 @@ p{
     margin-left: 53px;
     background-color: #0070E0;
     color: #000000;
-    padding: 25px 60px;
+    padding: 30px 45px;
     border: none;
     border-radius: 5px;
 }
 .botton{
+    font-size: 20px;
+    font-weight: bold;
     margin-left: 53px;
     color: #ffffff;
-    padding: -6px 20px;
     border: none;
     border-radius: 5px;
     text-decoration:underline;
 
+}
+
+.bitton .arrow-icon, .botton .arrow-icon {
+    margin-left: 10px; /* Adicione espaço entre o texto e o ícone à direita */
 }
 .btn {
     display: flex;
@@ -150,9 +165,13 @@ p{
     position: relative;
 }
 
-.arrow-icon {
-    position: absolute;
-    right: 10px; /* Ajuste a posição à direita conforme necessário */
+.btn .arrow-icon {
+    margin-left: 10px; /* Adicione espaço entre o texto e o ícone à direita */
+}
+
+.arrow-icon svg {
+    vertical-align: middle;
+    margin-top: -3px;
 }
 
 
